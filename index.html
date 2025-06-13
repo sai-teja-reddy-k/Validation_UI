@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | ValidationUI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="form-container">
+    <h2>📝 Register Now</h2>
+    <form id="registerForm" novalidate>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <small class="error" id="nameError"></small>
+
+      <input type="email" id="email" placeholder="Email Address" required />
+      <small class="error" id="emailError"></small>
+
+      <input type="password" id="password" placeholder="Password" required />
+      <small class="error" id="passwordError"></small>
+
+      <input type="password" id="confirm" placeholder="Confirm Password" required />
+      <small class="error" id="confirmError"></small>
+
+      <button type="submit" class="btn">✅ Register</button>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
